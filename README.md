@@ -5,25 +5,25 @@ Bluenose URL(s):
 ----------------
 
 1.  home page:-------------
-    https://web.cs.dal.ca/\~sunesara/csci5709/a2/index.html
+    https://web.cs.dal.ca/~sunesara/csci5709/a2/index.html
 
 2.  help:------------------
-    https://web.cs.dal.ca/\~sunesara/csci5709/a2/help.html
+    https://web.cs.dal.ca/~sunesara/csci5709/a2/help.html
 
 3.  about:-----------------
-    https://web.cs.dal.ca/\~sunesara/csci5709/a2/about.html
+    https://web.cs.dal.ca/~sunesara/csci5709/a2/about.html
 
 4.  signup:----------------
-    https://web.cs.dal.ca/\~sunesara/csci5709/a2/signup.html
+    https://web.cs.dal.ca/~sunesara/csci5709/a2/signup.html
 
 5.  forgot your password:--
-    https://web.cs.dal.ca/\~sunesara/csci5709/a2/forgot.html
+    https://web.cs.dal.ca/~sunesara/csci5709/a2/forgot.html
 
 6.  dashboard:-------------
-    https://web.cs.dal.ca/\~sunesara/csci5709/a2/dashboard.html
+    https://web.cs.dal.ca/~sunesara/csci5709/a2/dashboard.html
 
 7.  Reports:---------------
-    https://web.cs.dal.ca/\~sunesara/csci5709/a2/reports.html
+    https://web.cs.dal.ca/~sunesara/csci5709/a2/reports.html
 
 To login into Food Drive app, following credentials can be used (credentials are
 hardcoded). Other input will be consider as invalid credentials.
