@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css">
+    <title>Food Drive - Sign Up</title>
+</head>
+<body>
+<!--https://getbootstrap.com/docs/4.0/components/navbar/-->
+<nav class="navbar navbar-expand-lg bg-secondary">
+    <a class="navbar-brand" href="index.html">
+        <!--Logo Retrieved from https://www.logolynx.com/images/logolynx/f5/f53c4d13232e2ff432ee5c4c6129a956.png -->
+        <img src="images/logo1.png" width="150" height="100" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
+            aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <form class="form-inline" id="doLogin">
+            <table>
+                <tr>
+                    <td>
+                        <input id="MainUsername" class="form-control mr-sm-2" type="text" placeholder="Username" required="required">
+                    </td>
+                    <td>
+                        <input id="MainPassword" class="form-control mr-sm-2" type="password" placeholder="Password" required="required">
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="forgot.html" style="color:white;">Forgot your password?</a>
+                    </td>
+                    <td>
+                        <a href="signup.html" style="color:white;">New user? Signup here</a>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</nav>
+<br>
+<div class="container mainContent">
+    <div class="row">
+        <h1 class="display-4 mx-auto" id="lblSignupHeading">Sign up</h1>
+    </div>
+    <br>
+    <div class="row"><br></div>
+    <div class="row" id="buttons">
+        <div class="col-sm mb-2">
+            <button id="signUpAsFoodDonor" type="button" class="btn btn-primary btn-lg btn-block">Sign up as food donor</button>
+        </div>
+        <div class="col-sm">
+            <button id="signUpAsConsumer" type="button" class="btn btn-primary btn-lg btn-block">Sign to reserve food items</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <div id="donor" class="hide">
+                    <form id="RegisterDonor">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="txtFirstName" type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="txtLastName" type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtUserName" class="form-control" placeholder="Username *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="txtPassword" class="form-control" placeholder="Password *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="txtConfirmPassword" class="form-control"  placeholder="Confirm Password *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtBusinessName" class="form-control" placeholder="Business Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtAddressLine2" id="txtAddressLine2" class="form-control" placeholder="Business Address *" value="" />
+                                </div>
+                                <div class="row">
+                                    <input id="btnRegisterDonor" type="submit" class="btn btn-primary mx-auto"  value="Register"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="consumer" class="hide">
+                    <form id="RegisterConsumer">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="txtFirstName" type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="txtLastName" type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtUserName" class="form-control" placeholder="Username *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="txtPassword" class="form-control" placeholder="Password *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="txtConfirmPassword" class="form-control"  placeholder="Confirm Password *" value="" />
+                                </div>
+                                <div class="row">
+                                    <input type="submit" class="btn btn-primary mx-auto"  value="Register"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--https://getbootstrap.com/docs/4.0/components/modal/ -->
+    <div class="modal fade" id="SignupSuccessModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Success</h5>
+                </div>
+                <div class="modal-body">
+                    You have successfully registered into system. Please login to access the system.
+                </div>
+                <div class="modal-footer">
+                    <button id="btnRedirect" type="button" data-dismiss="modal" class="btn btn-primary">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="loginSuccessModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Success</h5>
+                </div>
+                <div class="modal-body">
+                    Successfully Login to system
+                </div>
+                <div class="modal-footer">
+                    <button id="btnRedirectDashboard" type="button" data-dismiss="modal" class="btn btn-primary">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="loginFailureModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Error</h5>
+                </div>
+                <div class="modal-body">
+                    Invalid login credentials. Please re-enter you user name and password.
+                </div>
+                <div class="modal-footer">
+                    <button id="btnRedirectIndex" type="button" data-dismiss="modal" class="btn btn-primary">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<!--https://getbootstrap.com/docs/4.0/components/navbar/-->
+<nav id="navBottom" class="navbar fixed-bottom bg-secondary">
+    <div class="container">
+        <form class="form-inline">
+            <table>
+                <tr>
+                    <td class="twidth">
+                        <a style="color:white" href="about.html">About</a>
+                    </td>
+                    <td class="twidth">
+                        <a style="color:white" href="help.html">Help</a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <!--Logo Retrieved from https://www.logolynx.com/images/logolynx/f5/f53c4d13232e2ff432ee5c4c6129a956.png -->
+                            <img src="images/rss.png" width="80" height="80" class="d-inline-block align-top"
+                                          alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <input class="form-control mr-sm-2" type="email" placeholder="Email address" aria-label="Search"
+                               required="required">
+                        <button class="btn btn-success" type="submit">Subscribe</button>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</nav>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/signup.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAcNXFnD-C-Hf-lMc2hixP02WYWL8DHU4&libraries=places&callback=autocompleteAddress" async defer></script>
+<script src="js/bootstrapValidator.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

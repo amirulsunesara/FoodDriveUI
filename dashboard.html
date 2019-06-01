@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"/>
+    <title>Food Drive - Dashboard</title>
+    <link rel="stylesheet" href="css/Chart.min.css">
+</head>
+<body>
+<!--https://getbootstrap.com/docs/4.0/components/navbar/-->
+<nav class="navbar bg-secondary p-0">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logo1.png" width="150" height="100" class="d-inline-block align-top" alt="">
+    </a>
+    <ul class="nav navbar-right top-nav">
+        <li class="dropdown" style="margin-right: 56px;">
+            <a id="profileMenu" href="#" class="userprofile" data-toggle="dropdown" style="color:white; font-size: large; text-decoration-line: none;">John Doe    <i class="material-icons" style="vertical-align: bottom;">
+                person_outline
+            </i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#" style="text-decoration:none;"> Notification Settings</a></li>
+                <li><a href="#" style="text-decoration:none;"> Change Password</a></li>
+                <li><a href="index.html" style="text-decoration:none;"> Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div class="container-fluid" style="overflow: hidden;">
+    <div class="row">
+        <nav class="col-md-2 sidebar d-none bg-light d-md-block" style="padding-left:0px;position: fixed; height: 100%">
+            <div class="sidebar-sticky" style="margin-top: 20px;">
+                <ul class="nav flex-column">
+                    <li class="nav-item selecteditem">
+                    <a class="nav-link" href="dashboard.html" >
+                        <i class="material-icons" style="vertical-align: bottom;">
+                            dashboard
+                        </i>  Dashboard
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#">
+                            <i class="material-icons" style="vertical-align: bottom;">
+                                library_add
+                            </i>     Add Items in Inventory
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="material-icons" style="vertical-align: bottom;">
+                                local_library
+                            </i>
+                            View Items in Inventory
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="material-icons" style="vertical-align: bottom;">
+                                chrome_reader_mode
+                            </i>
+                            View Reservations
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reports.html">
+                            <i class="material-icons" style="vertical-align: bottom;">
+                                file_copy
+                            </i>
+                            Reports
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="col-md-8 pt-4 ml-sm-auto col-lg-10 px-5">
+             <div class="container">
+                <h1 class="h2">Dashboard</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <canvas id="pieChart" style="height: 100%;width:100%"></canvas>
+                    </div>
+                    <div class="col-md-6">
+                        <canvas id="barChart" style="height: 100%;width:100%"></canvas>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!--https://getbootstrap.com/docs/4.0/components/navbar/-->
+<nav class="navbar fixed-bottom bg-secondary">
+    <div class="container">
+        <form class="form-inline">
+            <table>
+                <tr>
+                    <td class="twidth">
+                        <a style="color:white" href="about.html">About</a>
+                    </td>
+                    <td class="twidth">
+                        <a style="color:white" href="help.html">Help</a>
+                    </td>
+                    <td>
+                        <!--Logo Retrieved from https://www.logolynx.com/images/logolynx/f5/f53c4d13232e2ff432ee5c4c6129a956.png -->
+                        <a href="#"> <img src="images/rss.png" width="80" height="80" class="d-inline-block align-top"
+                                          alt=""> </a>
+                    </td>
+                    <td>
+                        <input class="form-control mr-sm-2" type="email" placeholder="Email address"
+                               required="required">
+                        <button class="btn btn-success" type="submit">Subscribe</button>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</nav>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/Chart.bundle.min.js"></script>
+<script src="js/graphs.js"></script>
+</body>
+</html>

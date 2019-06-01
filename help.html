@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Food Drive - Help</title>
+</head>
+<body>
+<!--https://getbootstrap.com/docs/4.0/components/navbar/-->
+<nav class="navbar navbar-expand-lg bg-secondary">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logo1.png" width="150" height="100" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
+            aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <form class="form-inline" id="doLogin">
+            <table>
+                <tr>
+                    <td>
+                        <input id="MainUsername" class="form-control mr-sm-2" type="text" placeholder="Username" required="required">
+                    </td>
+                    <td>
+                        <input id="MainPassword" class="form-control mr-sm-2" type="password" placeholder="Password" required="required">
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="forgot.html" style="color:white;">Forgot your password?</a>
+                    </td>
+                    <td>
+                        <a href="signup.html" style="color:white;">New user? Signup here</a>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</nav>
+<br>
+<div class="container">
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Can't access my account
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Add items to inventory
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Reserve food items
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<!--https://getbootstrap.com/docs/4.0/components/navbar/-->
+<nav class="navbar fixed-bottom bg-secondary">
+    <div class="container">
+        <form class="form-inline">
+            <table>
+                <tr>
+                    <td class="twidth">
+                        <a style="color:white" href="about.html">About</a>
+                    </td>
+                    <td class="twidth">
+                        <a style="color:white" href="help.html">Help</a>
+                    </td>
+                    <td>
+                        <!--Logo Retrieved from https://www.logolynx.com/images/logolynx/f5/f53c4d13232e2ff432ee5c4c6129a956.png -->
+                        <a href="#"> <img src="images/rss.png" width="80" height="80" class="d-inline-block align-top"
+                                          alt=""> </a>
+                    </td>
+                    <td>
+                        <input class="form-control mr-sm-2" type="email" placeholder="Email address" aria-label="Search"
+                               required="required">
+                        <button class="btn btn-success" type="submit">Subscribe</button>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</nav>
+<!--https://getbootstrap.com/docs/4.0/components/modal/ -->
+<div class="modal fade" id="loginSuccessModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Success</h5>
+            </div>
+            <div class="modal-body">
+                Successfully Login to system
+            </div>
+            <div class="modal-footer">
+                <button id="btnRedirectDashboard" type="button" data-dismiss="modal" class="btn btn-primary">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="loginFailureModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Error</h5>
+            </div>
+            <div class="modal-body">
+                Invalid login credentials. Please re-enter you user name and password.
+            </div>
+            <div class="modal-footer">
+                <button id="btnRedirectIndex" type="button" data-dismiss="modal" class="btn btn-primary">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrapValidator.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
